@@ -1,0 +1,36 @@
+[
+  {
+    "manifestVersion": 2,
+    "name": "Erai-raws MultiSub",
+    "id": "anime.erairaws.multisub",
+    "version": "1.0.0",
+    "description": "Nyaa filtrado a releases [MultiSub] de Erai-raws (varias pistas de subtítulos, incluido español).",
+    "type": "torrent",
+    "accuracy": "medium",
+    "updatePeers": true,
+    "ratio": 0,
+    "media": "sub",
+    "languages": ["all"],
+    "url": "aHR0cHM6Ly9ueWFhLnNp",
+    "icon": "https://nyaa.si/static/favicon.png",
+    "update": "https://raw.githubusercontent.com/PravdaUsha/Test-1/main/index.json",
+    "code": "https://raw.githubusercontent.com/PravdaUsha/Test-1/main/erai-multisub.js",
+    "options": {
+      "multiSubOnly": {
+        "type": "boolean",
+        "description": "Mostrar solo releases [MultiSub]",
+        "default": true
+      },
+      "user": {
+        "type": "string",
+        "description": "Usuario/grupo de Nyaa a buscar",
+        "default": "Erai-raws"
+      },
+      "domain": {
+        "type": "string",
+        "description": "URL base de Nyaa. Cambiala por un mirror si nyaa.si está bloqueado en tu red.",
+        "default": "https://nyaa.si"
+      }
+    }
+  }
+]
