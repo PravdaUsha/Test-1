@@ -1,10 +1,10 @@
 [
   {
     "manifestVersion": 2,
-    "name": "Erai-raws MultiSub",
+    "name": "Subs ES (MultiSub + fansubs)",
     "id": "anime.erairaws.multisub",
-    "version": "1.0.0",
-    "description": "Nyaa filtrado a releases [MultiSub] de Erai-raws (varias pistas de subtítulos, incluido español).",
+    "version": "1.1.0",
+    "description": "Nyaa filtrado a fuentes con subs en español: Erai-raws, ToonsHub y VARYG (MultiSub) + categoría de traducidos con palabras de español.",
     "type": "torrent",
     "accuracy": "medium",
     "updatePeers": true,
@@ -16,14 +16,34 @@
     "update": "https://raw.githubusercontent.com/PravdaUsha/Test-1/main/index.json",
     "code": "https://raw.githubusercontent.com/PravdaUsha/Test-1/main/erai-multisub.js",
     "options": {
+      "erai": {
+        "type": "boolean",
+        "description": "Fuente: Erai-raws (MultiSub)",
+        "default": true
+      },
+      "toonshub": {
+        "type": "boolean",
+        "description": "Fuente: ToonsHub (Multi-Subs)",
+        "default": true
+      },
+      "varyg": {
+        "type": "boolean",
+        "description": "Fuente: VARYG (Multi-Subs)",
+        "default": true
+      },
+      "spanishFansubs": {
+        "type": "boolean",
+        "description": "Fuente: Nyaa 'traducidos a otros idiomas' filtrado por palabras de español (Spanish, Español, Castellano, Latino)",
+        "default": true
+      },
       "multiSubOnly": {
         "type": "boolean",
-        "description": "Mostrar solo releases [MultiSub]",
+        "description": "En Erai-raws, ToonsHub y VARYG, mostrar solo releases con etiqueta MultiSub",
         "default": true
       },
       "user": {
         "type": "string",
-        "description": "Usuario/grupo de Nyaa a buscar",
+        "description": "Usuario/grupo de Nyaa para la fuente Erai-raws",
         "default": "Erai-raws"
       },
       "domain": {
